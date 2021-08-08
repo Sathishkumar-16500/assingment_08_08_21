@@ -1,5 +1,5 @@
 # assingment_08_08_21
-                                                                       # Evolution of HTTP
+<center># Evolution of HTTP</center>
 
 ## HTTP/0.9 – The one-line protocol
 The initial version of HTTP had no version number; it has been later called 0.9 to differentiate it from the later versions. HTTP/0.9 is extremely simple: requests consist of a single line and start with the only possible method GET followed by the path to the resource (not the URL as both the protocol, server, and port are unnecessary once connected to the server).
