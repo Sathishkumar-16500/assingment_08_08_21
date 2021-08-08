@@ -7,8 +7,8 @@ The initial version of HTTP had no version number; it has been later called 0.9 
 HTTP/0.9 was very limited and both browsers and servers quickly extended it to be more versatile:
 
 - Versioning information is now sent within each request (HTTP/1.0 is appended to the GET line)<br />
-2.A status code line is also sent at the beginning of the response, allowing the browser itself to understand the success or failure of the request and to adapt its behavior in consequence (like in updating or using its local cache in a specific way)<br />
-3.The notion of HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the protocol extremely flexible and extensible.<br />
+- A status code line is also sent at the beginning of the response, allowing the browser itself to understand the success or failure of the request and to adapt its behavior in consequence (like in updating or using its local cache in a specific way)<br />
+-The notion of HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the protocol extremely flexible and extensible.<br />
 4.With the help of the new HTTP headers, the ability to transmit other documents than plain HTML files has been added (thanks to the Content-Type header).<br />
 
 # HTTP/1.1 – The standardized protocol
