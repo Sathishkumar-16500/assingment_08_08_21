@@ -6,7 +6,7 @@ The initial version of HTTP had no version number; it has been later called 0.9 
 # HTTP/1.0 – Building extensibility
 HTTP/0.9 was very limited and both browsers and servers quickly extended it to be more versatile:
 
-1.Versioning information is now sent within each request (HTTP/1.0 is appended to the GET line)
+1.Versioning information is now sent within each request (HTTP/1.0 is appended to the GET line)<br />
 2.A status code line is also sent at the beginning of the response, allowing the browser itself to understand the success or failure of the request and to adapt its behavior in consequence (like in updating or using its local cache in a specific way)
 3.The notion of HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the protocol extremely flexible and extensible.
 4.With the help of the new HTTP headers, the ability to transmit other documents than plain HTML files has been added (thanks to the Content-Type header).
