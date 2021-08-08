@@ -8,20 +8,20 @@ HTTP/0.9 was very limited and both browsers and servers quickly extended it to b
 
 - Versioning information is now sent within each request (HTTP/1.0 is appended to the GET line)<br />
 - A status code line is also sent at the beginning of the response, allowing the browser itself to understand the success or failure of the request and to adapt its behavior in consequence (like in updating or using its local cache in a specific way)<br />
--The notion of HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the protocol extremely flexible and extensible.<br />
-4.With the help of the new HTTP headers, the ability to transmit other documents than plain HTML files has been added (thanks to the Content-Type header).<br />
+- The notion of HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the protocol extremely flexible and extensible.<br />
+- With the help of the new HTTP headers, the ability to transmit other documents than plain HTML files has been added (thanks to the Content-Type header).<br />
 
 # HTTP/1.1 – The standardized protocol
 In parallel to the somewhat chaotic use of the diverse implementations of HTTP/1.0, and since 1995, well before the publication of HTTP/1.0 document the next year, proper standardization was in progress. The first standardized version of HTTP, HTTP/1.1 was published in early 1997, only a few months after HTTP/1.0.
 
 HTTP/1.1 clarified ambiguities and introduced numerous improvements:
 
-1.A connection can be reused, saving the time to reopen it numerous times to display the resources embedded into the single original document retrieved.<br />
-2.Pipelining has been added, allowing to send a second request before the answer for the first one is fully transmitted, lowering the latency of the communication.<br />
-3.Chunked responses are now also supported.<br />
-4.Additional cache control mechanisms have been introduced.<br />
-5.Content negotiation, including language, encoding, or type, has been introduced, and allows a client and a server to agree on the most adequate content to exchange.<br />
-6.Thanks to the Host header, the ability to host different domains at the same IP address now allows server colocation.<br />
+- A connection can be reused, saving the time to reopen it numerous times to display the resources embedded into the single original document retrieved.<br />
+- Pipelining has been added, allowing to send a second request before the answer for the first one is fully transmitted, lowering the latency of the communication.<br />
+- Chunked responses are now also supported.<br />
+- Additional cache control mechanisms have been introduced.<br />
+- Content negotiation, including language, encoding, or type, has been introduced, and allows a client and a server to agree on the most adequate content to exchange.<br />
+- Thanks to the Host header, the ability to host different domains at the same IP address now allows server colocation.<br />
 
 # HTTP/2 – A protocol for greater performance
 Over the years, Web pages have become much more complex, even becoming applications in their own right. The amount of visual media displayed, the volume and size of scripts adding interactivity, has also increased: much more data is transmitted over significantly more HTTP requests. HTTP/1.1 connections need requests sent in the correct order. Theoretically, several parallel connections could be used (typically between 5 and 8), bringing considerable overhead and complexity. For example, HTTP pipelining has emerged as a resource burden in Web development.
@@ -30,17 +30,17 @@ In the first half of the 2010s, Google demonstrated an alternative way of exchan
 
 The HTTP/2 protocol has several prime differences from the HTTP/1.1 version:
 
-1.It is a binary protocol rather than text. It can no longer be read and created manually. Despite this hurdle, improved optimization techniques can now be implemented.<br />
-2.It is a multiplexed protocol. Parallel requests can be handled over the same connection, removing the order and blocking constraints of the HTTP/1.x protocol.<br />
-3.It compresses headers. As these are often similar among a set of requests, this removes duplication and overhead of data transmitted.<br />
-4.It allows a server to populate data in a client cache, in advance of it being required, through a mechanism called the server push.<br />
+- It is a binary protocol rather than text. It can no longer be read and created manually. Despite this hurdle, improved optimization techniques can now be implemented.<br />
+- It is a multiplexed protocol. Parallel requests can be handled over the same connection, removing the order and blocking constraints of the HTTP/1.x protocol.<br />
+- It compresses headers. As these are often similar among a set of requests, this removes duplication and overhead of data transmitted.<br />
+- It allows a server to populate data in a client cache, in advance of it being required, through a mechanism called the server push.<br />
 
 # Post-HTTP/2 evolution
 HTTP didn't stop evolving upon the release of HTTP/2. Like with HTTP/1.x previously, HTTP's extensibility is still being used to add new features. Notably, we can cite new extensions of the HTTP protocol appearing in 2016:
 
-1.Support of Alt-Svc allows the dissociation of the identification and the location of a given resource, allowing for a smarter CDN caching mechanism.<br />
-2.The introduction of Client-Hints allows the browser, or client, to proactively communicate information about its requirements, or hardware constraints, to the server.<br />
-3.The introduction of security-related prefixes in the Cookie header, now helps guarantee a secure cookie has not been altered.<br />
+- Support of Alt-Svc allows the dissociation of the identification and the location of a given resource, allowing for a smarter CDN caching mechanism.<br />
+- The introduction of Client-Hints allows the browser, or client, to proactively communicate information about its requirements, or hardware constraints, to the server.<br />
+- The introduction of security-related prefixes in the Cookie header, now helps guarantee a secure cookie has not been altered.<br />
 
 This evolution of HTTP proves its extensibility and simplicity, liberating creation of many applications and compelling the adoption of the protocol. The environment in which HTTP is used today is quite different from that seen in the early 1990s. HTTP's original design proved to be a masterpiece, allowing the Web to evolve over a quarter of a century, without the need of a mutiny. By healing flaws, yet retaining the flexibility and extensibility which made HTTP such a success, the adoption of HTTP/2 hints at a bright future for the protocol.
 
